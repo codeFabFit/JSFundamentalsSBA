@@ -81,31 +81,36 @@ const CourseInfo = {
 
 // finding the average score of all data 
 
-function getLearnerData (LearnerSubmissions = points_possible * 100) {
+function getLearnerData (CourseInfo, AssignmentGroup, LearnerSubmissions) {
     
-}
 let score = 0
-for (let i=0; i < getLearnerData.length; i++) {
-    let score = getLearnerData(i)
-    score += LearnerSubmissions
+for (let i=0; i < LearnerSubmissions.length; i++) {
+     score += LearnerSubmissions[i].submission.score
+     console.log(score)
+    // score += LearnerSubmissions
 }
-score = score % LearnerSubmissions * 100
 console.log(score)
+// score = score / LearnerSubmissions[i].submission.score * 100
+
+}
+
+getLearnerData (CourseInfo, AssignmentGroup, LearnerSubmissions)
+
+
 
 // turns out to be NaN , not sure what i did incorrectly 
 
 
 // if student passed in assignment on time // works!
 
-function getLearnerData (submitted_at) {
+// function getLearnerData (CourseInfo, AssignmentGroup, LearnerSubmissions) {
 
-}
+
 let submitted_at = ("")
 for (let i=0; i <= getLearnerData.filter; i++){
     let LearnerSubmissions = submitted_at(i)
-   
 }
-     console.log("submitted on time")
+     console.log("submitted on time")  
 
 // for loop to show all submissions and assignments from learner
 
@@ -121,5 +126,23 @@ console.log(arr.length)
 console.log(LearnerSubmissions)
 
 
-// removing the last grade
+// removing the last 2 grade
 
+function removeLastGrade () {
+  let removeLastGrade = [LearnerSubmissions]
+} const removed = LearnerSubmissions.splice(2,2)
+
+console.log(removed);
+console.log(LearnerSubmissions.length)
+console.log(LearnerSubmissions)
+
+// using shift to remove the first string in the array
+
+function removedList () {
+  let removedList = [AssignmentGroup]
+}
+let value = [AssignmentGroup].shift ();
+console.log(value)
+console.log([AssignmentGroup])
+
+// i wanted it to list the remaining assignments but its not, its only listing the first one again
