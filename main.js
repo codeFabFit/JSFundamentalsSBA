@@ -98,21 +98,6 @@ console.log(total / scores.length)
 getLearnerData (CourseInfo, AssignmentGroup, LearnerSubmissions)
 
 
-// finding the average score of 1 student 
-
-
-//  function getLearnerID (AssignmentGroup)
-// for (let i=0; i < LearnerSubmissions.length; i++){
-// }
-
-// for  {use this to then grab something from another subsections 
-
-
-
-// if student passed in assignment on time // works!
-
-// function getLearnerData (CourseInfo, AssignmentGroup, LearnerSubmissions) {
-
 
 let submitted_at = (CourseInfo, AssignmentGroup, LearnerSubmissions)
 let arr1 = []
@@ -154,7 +139,7 @@ let value = [LearnerSubmissions].pop ();
 console.log(value)
 
 
-// i wanted it to list the remaining assignments but its not, its only listing the first one again
+// i wanted it to list the remaining assignments but its not
 
 function removedAssignmentList () {
   let removedList = [AssignmentGroup]
@@ -213,48 +198,48 @@ console.log([AssignmentGroup])
 // } try (error) 
 // }
 
-// console.error("An error has happned") 
+// console.error("An error has happned") not a good code 
 
 
-function allAssigment(){
+function allAssigments(){
   try {
-    let passedIn = assignments.due_at();
+    let passedIn = allAssigments.due_at[3];
     console.log(`${passedIn} is passed in`)
   }
   catch(error){
 
   console.log(error)
-  console.log(` not passed in`)
+  console.log(`not passed in`)
   // console.log("why isnt this showing anything on this line")
 
   }
 }
-allAssigment()
+allAssigments()
 ///// 
 //  
 
 function submittedOnTime () {
   const date = new Date(AssignmentGroup.assignments[0].due_at)
   console.log(date)
- for (let i=0; i = AssignmentGroup.assignments[0].filter; i++)
+ for (let i="01-24-2023"; i = AssignmentGroup.assignments[0].filter; i++)
   switch(date){
-  case "3156-11-15":
+  case "01-24-2023":
   console.log("this assigment was submitted on Sunday.");
   break
   console.log("this assigment was submitted on Monday.");
-  case "3156-11-15":
+  case "01-24-2023":
   console.log("this assigment was submitted on Tuesday.");
   break
   console.log("this assigment was submitted on Wednesday.");
-  case "3156-11-15":
+  case "01-24-2023":
   console.log("this assigment was submitted on Thursday.");
   break
   console.log("this assigment was submitted on Friday.");
-  case "3156-11-15":
+  case "01-24-2023":
   console.log("this assigment was submitted on Saturday.");
  break
  default:
   console.log("invalid date")
 }
-}
-submittedOnTime()
+ }
+  submittedOnTime()
