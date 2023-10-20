@@ -145,7 +145,7 @@ console.log({removed});
 console.log(LearnerSubmissions.length)
 console.log({LearnerSubmissions})
 
-// using shift to remove the first string in the array
+// using pop to remove the first string in the array
 
 function removedSubmissionList () {
   let removedList = [LearnerSubmissions]
@@ -197,7 +197,6 @@ function allCourses (assignments) {
 for (const id in AssignmentGroup) {
     allCourses.push(assignments[id]["name"]);
 }
-
 }
 console.log([AssignmentGroup])
 // ///////
@@ -216,14 +215,45 @@ console.log([AssignmentGroup])
 // console.error("An error has happned") 
 
 
-function allAssigment(AssignmentGroup){
+function allAssigment(){
   try {
-    let passedIn = assignments();
+    let passedIn = assignments.due_at();
     console.log(`${passedIn} is passed in`)
   }
   catch(error){
 
   console.log(error)
-  console.log(`${passedIn} not passed in`)
+  console.log(` not passed in`)
+  // console.log("why isnt this showing anything on this line")
+
   }
 }
+allAssigment()
+///// 
+//  
+
+function submittedOnTime () {
+  const date = new Date(AssignmentGroup.assignments[0].due_at)
+  console.log(date)
+ for (let i=0; i = assignments[0].filter; i++)
+  switch(submitted_at){
+  case "3156-11-15":
+  console.log("this assigment was submitted on Sunday.");
+  break
+  console.log("this assigment was submitted on Monday.");
+  case "3156-11-15":
+  console.log("this assigment was submitted on Tuesday.");
+  break
+  console.log("this assigment was submitted on Wednesday.");
+  case "3156-11-15":
+  console.log("this assigment was submitted on Thursday.");
+  break
+  console.log("this assigment was submitted on Friday.");
+  case "3156-11-15":
+  console.log("this assigment was submitted on Saturday.");
+ break
+ default:
+  console.log("invalid date")
+}
+}
+submittedOnTime()
