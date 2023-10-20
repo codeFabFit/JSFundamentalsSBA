@@ -210,8 +210,6 @@ function allAssigments(){
 
   console.log(error)
   console.log(`not passed in`)
-  // console.log("why isnt this showing anything on this line")
-
   }
 }
 allAssigments()
@@ -221,7 +219,9 @@ allAssigments()
 function submittedOnTime () {
   const date = new Date(AssignmentGroup.assignments[0].due_at)
   console.log(date)
- for (let i="01-24-2023"; i = AssignmentGroup.assignments[0].filter; i++)
+ for (let i=AssignmentGroup.assignments[0].due_at; i > AssignmentGroup.assignments[0].filter; i++){
+ }
+
   switch(date){
   case "01-24-2023":
   console.log("this assigment was submitted on Sunday.");
@@ -240,6 +240,8 @@ function submittedOnTime () {
  break
  default:
   console.log("invalid date")
+
 }
  }
   submittedOnTime()
+
