@@ -132,7 +132,7 @@ for (let i=0; i< arr.length; i++){
     }
 }
 console.log(arr.length)
-console.log(LearnerSubmissions)
+console.log({LearnerSubmissions})
 
 arr([LearnerSubmissions])
 // removing the last 2 grade
@@ -141,9 +141,9 @@ function removeLastGrade () {
   let removeLastGrade = [LearnerSubmissions]
 } const removed = LearnerSubmissions.splice(2,2)
 
-console.log(removed);
+console.log({removed});
 console.log(LearnerSubmissions.length)
-console.log(LearnerSubmissions)
+console.log({LearnerSubmissions})
 
 // using shift to remove the first string in the array
 
@@ -177,7 +177,7 @@ if (arr <= 3) {
 
 }
 
-// get the higher schore
+// passing grade for a specific assingment 
 
 function passingGrade () {
   let arr4 = [LearnerSubmissions]
@@ -188,9 +188,7 @@ if (arr4 = 140) {
 console.log("Passing Grade")
 } if(arry = 150) {
 }console.log("Passing Grade")
-if (arrayy = 130) {
-}
-console.log("")
+
 // list out assignments 
 
 function allCourses (assignments) {
@@ -201,7 +199,7 @@ for (const id in AssignmentGroup) {
 }
 
 }
-console.log(AssignmentGroup)
+console.log([AssignmentGroup])
 // ///////
 
 // function allClasses(assignments) {
@@ -216,3 +214,16 @@ console.log(AssignmentGroup)
 // }
 
 // console.error("An error has happned") 
+
+
+function allAssigment(AssignmentGroup){
+  try {
+    let passedIn = assignments();
+    console.log(`${passedIn} is passed in`)
+  }
+  catch(error){
+
+  console.log(error)
+  console.log(`${passedIn} not passed in`)
+  }
+}
