@@ -83,22 +83,30 @@ const CourseInfo = {
 
 function getLearnerData (CourseInfo, AssignmentGroup, LearnerSubmissions) {
     
-let score = 0
+let scores = []
+let total = 0
 for (let i=0; i < LearnerSubmissions.length; i++) {
-     score += LearnerSubmissions[i].submission.score
-     console.log(score)
-    // score += LearnerSubmissions
+  total += LearnerSubmissions[i].submission.score
+     scores.push(LearnerSubmissions[i].submission.score) 
 }
-console.log(score)
-// score = score / LearnerSubmissions[i].submission.score * 100
-
+// console.log(scores)
+console.log(scores)
+console.log(total)
+console.log(total / scores.length)
 }
 
 getLearnerData (CourseInfo, AssignmentGroup, LearnerSubmissions)
 
 
+// finding the average score of 1 student 
 
-// turns out to be NaN , not sure what i did incorrectly 
+
+//  function getLearnerID (AssignmentGroup)
+// for (let i=0; i < LearnerSubmissions.length; i++){
+// }
+
+// for  {use this to then grab something from another subsections 
+
 
 
 // if student passed in assignment on time // works!
@@ -106,11 +114,12 @@ getLearnerData (CourseInfo, AssignmentGroup, LearnerSubmissions)
 // function getLearnerData (CourseInfo, AssignmentGroup, LearnerSubmissions) {
 
 
-let submitted_at = ("")
+let submitted_at = (CourseInfo, AssignmentGroup, LearnerSubmissions)
+let arr1 = []
 for (let i=0; i <= getLearnerData.filter; i++){
-    let LearnerSubmissions = submitted_at(i)
+     LearnerSubmissions = submission.submitted_at
 }
-     console.log("submitted on time")  
+     console.log("submitted on time")
 
 // for loop to show all submissions and assignments from learner
 
@@ -118,14 +127,14 @@ function arr([LearnerSubmissions]) {
 
 }
 for (let i=0; i< arr.length; i++){
-    if (arr !== "50") {
+    if (arr === 50) {
        let submission = (LearnerSubmissions[i]);
     }
 }
 console.log(arr.length)
 console.log(LearnerSubmissions)
 
-
+arr([LearnerSubmissions])
 // removing the last 2 grade
 
 function removeLastGrade () {
@@ -138,11 +147,72 @@ console.log(LearnerSubmissions)
 
 // using shift to remove the first string in the array
 
-function removedList () {
-  let removedList = [AssignmentGroup]
+function removedSubmissionList () {
+  let removedList = [LearnerSubmissions]
 }
-let value = [AssignmentGroup].shift ();
+let value = [LearnerSubmissions].pop ();
 console.log(value)
-console.log([AssignmentGroup])
+
 
 // i wanted it to list the remaining assignments but its not, its only listing the first one again
+
+function removedAssignmentList () {
+  let removedList = [AssignmentGroup]
+}
+let values = [AssignmentGroup].reverse ();
+console.log(value)
+
+
+// get the average assignment from each student assignemnt 1
+
+function passedInAssignments () {
+  let arr = [LearnerSubmissions]
+}
+for (let i=0; i <= LearnerSubmissions.filter; i++)
+Array = [LearnerSubmissions.filter(learner_id)] 
+if (arr <= 3) {
+  console.log("true")
+} else {
+  console.log("false")
+
+}
+
+// get the higher schore
+
+function passingGrade () {
+  let arr4 = [LearnerSubmissions]
+}
+for (let i=0; i <= LearnerSubmissions.filter; i++)
+Array1 = [LearnerSubmissions.filter()] 
+if (arr4 = 140) {
+console.log("Passing Grade")
+} if(arry = 150) {
+}console.log("Passing Grade")
+if (arrayy = 130) {
+}
+console.log("")
+// list out assignments 
+
+function allCourses (assignments) {
+  let allCourses = []
+// for (let i=0; i < AssignmentGroup.filter; i++)
+for (const id in AssignmentGroup) {
+    allCourses.push(assignments[id]["name"]);
+}
+
+}
+console.log(AssignmentGroup)
+// ///////
+
+// function allClasses(assignments) {
+//   }try {
+//     let allClasses =[];
+
+//     for(const course_id in assignments) {
+//       allClasses.push(assignments[id]["name"])
+//   } catch {
+//     console.log(allClasses.join());
+// } try (error) 
+// }
+
+// console.error("An error has happned") 
