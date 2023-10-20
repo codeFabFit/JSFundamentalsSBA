@@ -188,6 +188,7 @@ if (arr4 = 140) {
 console.log("Passing Grade")
 } if(arry = 150) {
 }console.log("Passing Grade")
+passingGrade()
 
 // list out assignments 
 
@@ -235,8 +236,8 @@ allAssigment()
 function submittedOnTime () {
   const date = new Date(AssignmentGroup.assignments[0].due_at)
   console.log(date)
- for (let i=0; i = assignments[0].filter; i++)
-  switch(submitted_at){
+ for (let i=0; i = AssignmentGroup.assignments[0].filter; i++)
+  switch(date){
   case "3156-11-15":
   console.log("this assigment was submitted on Sunday.");
   break
